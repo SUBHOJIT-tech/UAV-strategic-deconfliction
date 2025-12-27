@@ -1035,15 +1035,14 @@ Full license: [LICENSE](LICENSE)
 
 <div align="center">
 
-### **Subhojit**
-*Aspiring Drone Systems Engineer | UAV Software Developer*
+### **Subhojit Bebarta**
+*Aspiring Electronics Engineer | Collaborating with AI*
 
 ---
 
 [![GitHub](https://img.shields.io/badge/GitHub-SUBHOJIT--tech-181717?style=for-the-badge&logo=github)](https://github.com/SUBHOJIT-tech)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/your-linkedin-profile)
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://your-portfolio-website.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/subhojit-bebarta-a45859375/)
+[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:subhojitbebarta123@gmail.com)
 
 ---
 
@@ -1051,41 +1050,27 @@ Full license: [LICENSE](LICENSE)
 
 ### About This Project
 
-This UAV Strategic Deconfliction System was developed as part of my drone engineering portfolio to demonstrate:
+This UAV Strategic Deconfliction System was developed as part of my engineering portfolio, showcasing the intersection of **electronics engineering** and **AI-powered development**. This project demonstrates how modern engineers can leverage AI collaboration to build sophisticated, production-ready systems.
 
-- ✅ **Deep Understanding of UTM Principles** – Real-world airspace safety concepts
-- ✅ **Advanced Python Development** – Clean architecture, modular design
-- ✅ **Safety-Critical Systems Thinking** – Aviation-grade reliability standards
-- ✅ **Algorithmic Problem Solving** – Efficient spatial-temporal analysis
-- ✅ **Strong Documentation Skills** – Production-ready technical writing
+**What This Project Demonstrates:**
+- ✅ **System-Level Design Thinking** – Real-world UAV safety architecture
+- ✅ **Advanced Python Development** – Clean, modular codebase
+- ✅ **Safety-Critical Systems** – Aviation-grade reliability standards
+- ✅ **AI-Augmented Engineering** – Efficient development through AI collaboration
+- ✅ **Professional Documentation** – Industry-standard technical writing
 
-**Relevant Experience:**
-- Autonomous Systems Development
-- Path Planning & Collision Avoidance
-- Aviation Safety Standards (ICAO, FAA)
-- Multi-Agent Coordination Algorithms
-- Real-Time Embedded Systems
-
-**Technical Skills Demonstrated:**
+**Technical Skills Showcased:**
 ```python
 skills = {
-    "Languages": ["Python", "C++", "MATLAB"],
-    "Frameworks": ["ROS 2", "PX4", "ArduPilot"],
-    "Domains": ["UAV Systems", "Control Theory", "Computer Vision"],
-    "Tools": ["Git", "Docker", "JIRA", "Linux"]
+    "Core Engineering": ["Electronics", "Embedded Systems", "Signal Processing"],
+    "Programming": ["Python", "Algorithm Design", "System Architecture"],
+    "Domains": ["UAV Systems", "Autonomous Navigation", "Control Theory"],
+    "Modern Tools": ["AI-Assisted Development", "Git", "Linux"]
 }
 ```
 
-### Open to Opportunities
-
-I'm actively seeking **Drone Engineer** and **UAV Systems** roles where I can contribute to:
-- 🚁 Autonomous flight control systems
-- 🌐 UTM/airspace management platforms
-- 🔬 Navigation & localization algorithms
-- 🛡️ Safety-critical aviation software
-
-**Preferred Locations:** Remote, Bangalore, Hyderabad, Pune (India)  
-**Availability:** Immediate (Open to relocation)
+**Engineering Philosophy:**
+> *"As an aspiring electronics engineer, I believe in leveraging cutting-edge tools like AI to accelerate innovation while maintaining engineering rigor and safety standards."*
 
 ---
 
