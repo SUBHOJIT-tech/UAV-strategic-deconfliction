@@ -138,30 +138,32 @@ This design keeps the core logic reusable while enabling advanced analysis.
  The inclusion of altitude transforms the simulation into a true **4D deconfliction system**, qualifying it for extended visualization and safety analysis.
 
 
+## 📁 Project Structure
+
 UAV-strategic-deconfliction/
 │
-├── main.py                  # Entry point (orchestration)
-├── README.md
-├── requirements.txt
-├── .gitignore
+├── main.py # Entry point: orchestration
+├── README.md # Project documentation
+├── requirements.txt # Dependencies
+├── .gitignore # Ignored files
 │
 ├── models/
-│   ├── waypoint.py          # Waypoint abstraction
-│   └── trajectory.py        # Continuous motion model
+│ ├── waypoint.py # Waypoint abstraction (x, y, z, t)
+│ └── trajectory.py # Continuous motion model
 │
 ├── checks/
-│   ├── spatial.py           # Distance calculations
-│   ├── temporal.py          # Time utilities
-│   └── deconfliction.py     # Core safety engine
+│ ├── spatial.py # Distance calculations
+│ ├── temporal.py # Time utilities
+│ └── deconfliction.py # Core safety engine
 │
 ├── scenarios/
-│   └── presets.py           # Real-world UAV scenarios
+│ └── presets.py # Real-world UAV scenarios
 │
 ├── visualization/
-│   └── plot2d.py            # Trajectory visualization
+│ ├── plot2d.py # 2D visualization
+│ └── plot3d.py # 3D (altitude-aware) visualization
 │
-└── assets/                  # Images for README
-
+└── assets/
 
 ⚙️ How the System Works
 1️⃣ Trajectory Modeling
