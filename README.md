@@ -79,13 +79,64 @@ Time-shifted corridor reuse
 
 Hovering surveillance drone
 
-📈 2D Visualization
+📈 2D Visualization(Initial)
 
 Drone trajectories
 
 Conflict / near-miss location
 
 Time annotation
+
+## 🧭 4D Deconfliction Extension
+
+To extend the system beyond planar motion, the simulation has been upgraded to support **4D deconfliction**, where:
+
+- **X, Y** → horizontal position  
+- **Z** → altitude  
+- **T** → time (continuous)
+
+This enables realistic modeling of **vertical separation**, which is critical in real-world UAV and UTM (Unmanned Traffic Management) systems.
+
+---
+
+### 🔹 What Changed
+
+- **Waypoints extended to (x, y, z, t)**  
+  Each waypoint now includes altitude, allowing drones to cross the same x–y location at different heights.
+
+- **Continuous-Time 3D Separation**
+  Drone positions are interpolated in 3D space, and **Euclidean distance in (x, y, z)** is evaluated at each time step.
+
+- **4D Conflict Logic**
+  The same deconfliction engine operates in 4D by combining:
+  - 3D spatial separation  
+  - continuous time evaluation  
+
+- **3D Visualization**
+  A dedicated 3D plot visualizes:
+  - drone trajectories in space  
+  - altitude differences  
+  - conflict / near-miss points  
+
+---
+
+### 🔹 Why This Matters
+
+In dense airspace, many conflicts are avoided not by horizontal separation but by **altitude stratification**.  
+This extension demonstrates how the system aligns with **real aviation safety practices**, where vertical separation is a primary deconfliction mechanism.
+
+---
+
+### 🔹 2D vs 4D Modes
+
+The system supports both modes using a simple toggle:
+
+- **2D Mode** → traditional planar analysis  
+- **4D Mode** → full (x, y, z, t) safety evaluation  
+
+This design keeps the core logic reusable while enabling advanced analysis.
+ The inclusion of altitude transforms the simulation into a true **4D deconfliction system**, qualifying it for extended visualization and safety analysis.
+
 
 UAV-strategic-deconfliction/
 │
