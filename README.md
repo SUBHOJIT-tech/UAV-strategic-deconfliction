@@ -4,14 +4,12 @@
 ![UAV](https://img.shields.io/badge/Domain-UAV%20Safety-orange)
 
 🛩️ Multi-Drone Airspace Safety • Conflict Detection • Visualization
-## 🚀 Quick Start (Run in 60 seconds)
-
-```bash
+🚀 Quick Start (Run in 60 seconds)
 git clone https://github.com/SUBHOJIT-tech/UAV-strategic-deconfliction.git
 cd UAV-strategic-deconfliction
 
 python -m venv venv
-venv\Scripts\activate   # Windows
+venv\Scripts\activate    # Windows
 pip install -r requirements.txt
 
 python main.py
