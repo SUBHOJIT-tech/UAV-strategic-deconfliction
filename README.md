@@ -322,7 +322,7 @@ This UAV deconfliction system demonstrates the intersection of **electronics eng
   "Domains": ["UAV Systems", "Autonomous Navigation", "UTM"],
   "Tools": ["FastAPI", "NumPy", "Matplotlib", "AI-Assisted Dev"]
 }
-
+```
 
 ## 📞 Get In Touch
 
