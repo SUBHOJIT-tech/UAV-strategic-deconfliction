@@ -1,5 +1,27 @@
 🚁 UAV Strategic Deconfliction System
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
+![UAV](https://img.shields.io/badge/Domain-UAV%20Safety-orange)
+
 🛩️ Multi-Drone Airspace Safety • Conflict Detection • Visualization
+## 🚀 Quick Start (Run in 60 seconds)
+
+```bash
+git clone https://github.com/SUBHOJIT-tech/UAV-strategic-deconfliction.git
+cd UAV-strategic-deconfliction
+
+python -m venv venv
+venv\Scripts\activate   # Windows
+pip install -r requirements.txt
+
+python main.py
+
+FOR macOS/Linux
+source venv/bin/activate
+Outputs:-
+Visualization:
+- 2D plot with drone paths
+- Highlighted conflict / near-miss point
 📌 Overview
 
 This project implements a Strategic UAV Deconfliction System that determines whether a planned drone mission can safely operate in shared airspace with multiple other drones.
@@ -180,6 +202,18 @@ Clean and modular Python architecture
 
 Strong documentation and presentation
 
-⭐ If You Like This Project
+## 📌 Key Takeaway
 
-Feel free to ⭐ star the repository or fork it for experimentation.
+This project demonstrates how **real-world UAV airspace safety** can be modeled using:
+- Continuous-time motion
+- Multi-drone conflict detection
+- Severity grading
+- Mitigation planning
+- Visual validation
+
+
+## ⭐ Support
+
+If you find this project interesting or useful:
+- ⭐ Star the repository
+- 🍴 Fork it for experimentation
