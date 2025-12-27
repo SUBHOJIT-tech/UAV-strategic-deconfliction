@@ -1,0 +1,185 @@
+🚁 UAV Strategic Deconfliction System
+🛩️ Multi-Drone Airspace Safety • Conflict Detection • Visualization
+📌 Overview
+
+This project implements a Strategic UAV Deconfliction System that determines whether a planned drone mission can safely operate in shared airspace with multiple other drones.
+
+The system detects:
+
+🚨 Hard conflicts (safety violation)
+
+⚠️ Near-miss events (unsafe proximity)
+
+📊 Severity levels
+
+🧭 Mitigation suggestions
+
+It is inspired by real-world UTM (Unmanned Traffic Management) and airspace safety systems used for autonomous drones.
+
+✨ Key Features
+
+🧠 Continuous-Time Conflict Detection
+Drones are tracked continuously using linear interpolation between waypoints.
+
+🛸 Multi-Drone Airspace (N Drones)
+Evaluates one primary mission against any number of other drones.
+
+🚨 Conflict & Near-Miss Classification
+
+CONFLICT → Safety radius violated
+
+NEAR_MISS → Unsafe proximity without violation
+
+🔥 Severity Grading
+
+CRITICAL
+
+HIGH
+
+MEDIUM
+
+LOW
+
+🛠️ Mitigation Suggestions
+Example:
+
+Delay mission
+
+Increase separation
+
+Monitor closely
+
+🗺️ Real-World Scenario Presets
+
+Urban delivery crossing
+
+Emergency priority drone
+
+Time-shifted corridor reuse
+
+Hovering surveillance drone
+
+📈 2D Visualization
+
+Drone trajectories
+
+Conflict / near-miss location
+
+Time annotation
+
+UAV-strategic-deconfliction/
+│
+├── main.py                  # Entry point (orchestration)
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+├── models/
+│   ├── waypoint.py          # Waypoint abstraction
+│   └── trajectory.py        # Continuous motion model
+│
+├── checks/
+│   ├── spatial.py           # Distance calculations
+│   ├── temporal.py          # Time utilities
+│   └── deconfliction.py     # Core safety engine
+│
+├── scenarios/
+│   └── presets.py           # Real-world UAV scenarios
+│
+├── visualization/
+│   └── plot2d.py            # Trajectory visualization
+│
+└── assets/                  # Images for README
+
+
+⚙️ How the System Works
+1️⃣ Trajectory Modeling
+
+Each drone mission is defined using time-stamped waypoints (x, y, t).
+
+2️⃣ Continuous Motion
+
+Drone positions are interpolated between waypoints to compute location at any time.
+
+3️⃣ Spatio-Temporal Evaluation
+
+At each time step:
+
+Distance between drones is computed
+
+Safety thresholds are applied
+
+4️⃣ Event Classification
+Condition	Result
+Distance < Safety Radius	🚨 Conflict
+Safety < Distance < 1.2×Safety	⚠️ Near Miss
+5️⃣ Severity Assessment
+
+Severity is based on proximity to the safety radius.
+
+6️⃣ Prioritization
+
+If multiple events exist, the earliest safety-critical event is reported.
+Urban Delivery Simulation:
+<img width="1543" height="863" alt="Screenshot 2025-12-27 134217" src="https://github.com/user-attachments/assets/d597e4b4-0fd0-4ada-9a7c-2b5c6a0c75a4" />
+Emergency Drone simulation:
+<img width="1265" height="828" alt="Screenshot 2025-12-27 134451" src="https://github.com/user-attachments/assets/d3cd185c-6486-43a4-8b77-fe476d0bec15" />
+Hovering Survillience:
+<img width="1198" height="766" alt="Screenshot 2025-12-27 134638" src="https://github.com/user-attachments/assets/ee4b58bc-e706-49b5-a5b9-320cba4cdec8" />
+
+🔧 Configuration Parameters
+
+Defined in main.py:
+
+SAFETY_RADIUS = 2.0   # Minimum safe separation distance
+TIME_STEP = 0.5       # Time resolution (seconds)
+
+🌍 Real-World Scenarios Implemented
+Scenario	Description
+🏙️ Urban Delivery	Crossing delivery drones in city airspace
+🚑 Emergency Drone	Priority UAV cutting across traffic
+⏱️ Time-Shifted Corridor	Same path, different time slots
+👁️ Surveillance Drone	Hovering drone near flight path
+🧠 Design Philosophy
+
+🧩 Separation of Concerns
+
+main.py → orchestration
+
+deconfliction.py → safety logic
+
+scenarios/ → real-world modeling
+
+📈 Scalability-Ready
+Architecture naturally extends to large airspace systems.
+
+🛡️ Safety-First Thinking
+Near-miss handling reflects aviation best practices.
+
+🚀 Scalability Discussion (High Level)
+
+To support thousands of drones, this system can be extended using:
+
+Spatial partitioning (grids / R-trees)
+
+Time bucketing
+
+Parallel conflict evaluation
+
+Distributed processing (UTM-style architecture)
+
+🧑‍💻 Author Notes
+
+This project demonstrates:
+
+System-level thinking
+
+Real-world UAV safety modeling
+
+Clean and modular Python architecture
+
+Strong documentation and presentation
+
+⭐ If You Like This Project
+
+Feel free to ⭐ star the repository or fork it for experimentation.
